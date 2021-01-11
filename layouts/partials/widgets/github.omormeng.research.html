@@ -23,6 +23,7 @@
 
           {{ if .date_start}}
           - {{ (time .date_start).Format ($page.Params.date_format | default "Jan 2006") }}
+          {{end}}
           {{ if .date_end}}
           – {{ (time .date_end).Format ($page.Params.date_format | default "Jan 2006") }}
           {{end}}
