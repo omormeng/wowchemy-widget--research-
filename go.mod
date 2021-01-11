@@ -1,3 +1,3 @@
-module github.com/research/wowchemy-widget-research
+module github.com/omormeng/wowchemy-widget-research
 
 go 1.15
