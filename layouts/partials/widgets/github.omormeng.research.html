@@ -19,8 +19,6 @@
           {{- .organization | markdownify | emojify -}}
           {{- with .organization_url}}</a>{{end -}}
 
-          <span class="middot-divider"></span>
-
         {{with .description}}
           <div class="card-text">{{. | markdownify | emojify}}</div>
         {{end}}
