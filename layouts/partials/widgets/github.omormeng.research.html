@@ -1,5 +1,10 @@
 {{ $ := .root }}
 {{ $page := .page }}
+
+<h2>{{$section.Title}}</h2>
+
+<p>{{$section.Content}}</p>
+
 {{ $columns := $page.Params.design.columns | default "2" }}
 
 
