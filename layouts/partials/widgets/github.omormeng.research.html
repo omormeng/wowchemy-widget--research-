@@ -1,14 +1,12 @@
 {{ $ := .root }}
 {{ $page := .page }}
 
-<h2>{{$section.Title}}</h2>
-
-<p>{{$section.Content}}</p>
-
 {{ $columns := $page.Params.design.columns | default "2" }}
 
 
 <!-- research widget -->
+<h2>{{$section.Title}}</h2>
+
 <div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
   {{ with $page.Content }}{{ . }}{{ end }}
 
