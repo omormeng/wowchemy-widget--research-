@@ -2,7 +2,6 @@
 {{ $page := .page }}
 {{ $columns := $page.Params.design.columns | default "2" }}
 
-<h2>{{$section.Title}}</h2>
 
 <!-- research widget -->
 <div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
