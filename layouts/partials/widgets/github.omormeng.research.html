@@ -2,7 +2,6 @@
 {{ $page := .page }}
 
 <!-- research widget -->
-title: research
 
   {{ if $page.Params.item }}
   {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
