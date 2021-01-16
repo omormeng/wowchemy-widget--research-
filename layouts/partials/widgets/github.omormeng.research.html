@@ -2,8 +2,6 @@
 {{ $page := .page }}
 
 <!-- research widget -->
-<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
-  {{ with $page.Content }}{{ . }}{{ end }}
 
   {{ if $page.Params.item }}
   {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
