@@ -2,7 +2,7 @@
 {{ $page := .page }}
 
 <!-- research widget -->
-<strong>Representative Publications</strong>
+<b>Representative Publications</b>
   {{ if $page.Params.item }}
   {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
     <div class="card experience course">
