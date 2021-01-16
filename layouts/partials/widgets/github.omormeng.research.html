@@ -2,7 +2,7 @@
 {{ $page := .page }}
 
 <!-- research widget -->
-<font size="2" color="blue">This is some text!</font>
+<font size="20" color="black">Representative Publications</font>
 
   {{ if $page.Params.item }}
   {{ range $idx, $key := sort $page.Params.item ".date_start" "desc" }}
